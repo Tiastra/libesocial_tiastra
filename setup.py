@@ -31,14 +31,20 @@ def find_version(*paths):
 
 
 setup(
-    name='libesocial',
+    name='libesocial_tiastra',
     version=find_version('esocial', '__init__.py'),
     description='Biblioteca para uso com o eSocial',
-    long_description=read_file('README.md'),
+    long_description=(
+        'Biblioteca para uso com o eSocial.\n\n'
+        'Este projeto é um fork da biblioteca "libesocial" '
+        '(https://github.com/qualitaocupacional/libesocial). Agradecemos ao(s) autor(es) original(is) '
+        'por seu trabalho e contribuição.\n\n'
+        'Veja o README para mais detalhes sobre as modificações e o uso.'
+    ),
     long_description_content_type='text/markdown',
-    url='https://github.com/qualitaocupacional/libesocial',
-    author='Qualita Seguranca e Saude Ocupacional',
-    author_email='lab.ti@qualitamais.com.br',
+    url='https://github.com/Tiastra/libesocial_tiastra',
+    author='C.Tiago',
+    author_email='tiagovza@hotmail.com',
     license='Apache 2.0',
     packages=find_packages(exclude=['contrib', 'docs']),
     include_package_data=True,
@@ -52,6 +58,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.10',
     ],
 )
 
